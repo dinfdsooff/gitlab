@@ -1,0 +1,52 @@
+project: 
+  - name: project1
+  - name: project2
+  - name: project3
+  - name: project4
+  - name: project5
+  - name: project6
+
+group: 
+  - name: group1
+    projects:
+      - project1 
+      - project3
+  - name: group2
+    projects:
+      - project18
+      - project31
+  - name: group3
+    projects:
+      - project11
+      - project33
+  - name: group4
+    projects:
+      - project10
+      - project22
+
+user: 
+  - username: user1
+    password: user1
+    email: user1@gmail.com 
+    is_admin: 
+    projects_limit: 
+    can_create_group: 
+    is_external: 
+    reset_password: 
+    access_level: 
+    group: 
+      - group1
+      - group2  
+
+  - username: user2
+    password: user2
+    email: user2@gmail.com
+    is_admin: 
+    projects_limit: 
+    can_create_group: 
+    is_external: 
+    reset_password: 
+    access_level: 
+    group: 
+      - group12
+      - group21
