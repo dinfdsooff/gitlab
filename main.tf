@@ -9,7 +9,7 @@ terraform {
 
 # Configure the GitLab Provider
 provider "gitlab" {
-    token = "xxxx"
+    token = "gU-bv8k1AyAE544Bsz-H"
     base_url = "http://localhost:8080/api/v4/"
     insecure = true
 }
@@ -35,21 +35,14 @@ locals {
   # ]
 }
 
-# resource "gitlab_group" "example" {
-#   name        = "<input>"
-#   path        = "<input>"
-# }
-
 
 resource "gitlab_project" "example" {
   count       = length(local.x)
   name        = local.x[count.index].project_name
-  namespace_id   = gitlab_group.example.id
+  namespace_id   = module.group.output
   #namespace_id   = < get the id of the group resource you are going to create next, pass as input "local.x[count.index].project_name" to module "./create_group" >
 }
 
 module "group" {
   source = "./group"
 }
-
-

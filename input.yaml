@@ -1,25 +1,61 @@
 project: 
   - name: project1
+    path: 
+    tags: 
+    default_branch:
+    import_url:
   - name: project2
+    path: 
+    tags: 
+    default_branch:
+    import_url:
   - name: project3
+    path: 
+    tags: 
+    default_branch:
+    import_url:
   - name: project4
+    path: 
+    tags: 
+    default_branch:
+    import_url:
   - name: project5
+    path: 
+    tags: 
+    default_branch:
+    import_url:
   - name: project6
+    path: 
+    tags: 
+    default_branch:
+    import_url:
 
 group: 
   - name: group1
+    description:
+    two_factor_grace_period: 
+    auto_devops_enabled:
     projects:
       - project1 
       - project3
   - name: group2
+    description:
+    two_factor_grace_period: 
+    auto_devops_enabled:
     projects:
       - project18
       - project31
   - name: group3
+    description:
+    two_factor_grace_period: 
+    auto_devops_enabled:
     projects:
       - project11
       - project33
   - name: group4
+    description:
+    two_factor_grace_period: 
+    auto_devops_enabled:
     projects:
       - project10
       - project22
